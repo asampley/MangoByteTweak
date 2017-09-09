@@ -385,9 +385,9 @@ class Audio(MangoCog):
 
 		audiolength = clip.audiolength
 
-		if audiolength > 3.1:
-			await ctx.send(f"Dat clip is {audiolength:.1f} seconds long, and intros gotta be less than 3.")
-			return
+#		if audiolength > 3.1:
+#			await ctx.send(f"Dat clip is {audiolength:.1f} seconds long, and intros gotta be less than 3.")
+#			return
 
 		botdata.userinfo(user.id).intro = clip.clipid
 		await ctx.send("Yer intro is now " + clip.clipid)
@@ -425,9 +425,9 @@ class Audio(MangoCog):
 
 		audiolength = clip.audiolength
 
-		if audiolength > 3.1:
-			await ctx.send(f"Dat clip is {audiolength:.1f} seconds long, and outros gotta be less than 3.")
-			return
+#		if audiolength > 3.1:
+#			await ctx.send(f"Dat clip is {audiolength:.1f} seconds long, and outros gotta be less than 3.")
+#			return
 
 		botdata.userinfo(user.id).outro = clip.clipid
 		await ctx.send("Yer outro is now " + clip.clipid)
