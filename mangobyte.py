@@ -25,7 +25,7 @@ description = """The juiciest unsigned 8 bit integer you is eva gonna see.
 				For more information about me, try `{cmdpfx}info`"""
 permissions = 314432
 
-bot = commands.Bot(command_prefix='?', formatter=MangoHelpFormatter(), description=description)
+bot = commands.Bot(command_prefix='!', formatter=MangoHelpFormatter(), description=description)
 bot.remove_command("help")
 thinker = Thinker(bot)
 invite_link = f"https://discordapp.com/oauth2/authorize?permissions={permissions}&scope=bot&client_id=213476188037971968"
